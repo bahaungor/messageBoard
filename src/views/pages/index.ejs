@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+<body>
+    <%- include('../partials/header'); %>
+
+    <main>
+        <!-- Rendering Single Variable -->
+        <h2><%= title %></h2>
+
+        <!-- Looping Over Data -->
+        <ul>
+            <% messages.forEach(message => { %>
+                <li>
+                    <strong><%= message.user %></strong>
+                    <br>
+                    message: <%= message.text %>
+                    <br>
+                    date: <%= message.added %>
+                </li>
+            <% }); %>
+        </ul>
+
+        <button>
+          <a href="http://127.0.0.1:3000/new">
+            Add New Message
+          </a>
+        </button>
+        
+    </main>
+
+    <%- include('../partials/footer'); %>
+</body>
+</html>

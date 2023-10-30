@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+<body>
+    <%- include('../partials/header'); %>
+
+    <main>
+        <form method="POST" action="/new" class="messageForm">
+            <input type="text" id="user" name="user" placeholder="Enter username">
+            <input type="text" id="message" name="message" placeholder="Enter message">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <%- include('../partials/footer'); %>
+</body>
+</html>
