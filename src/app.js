@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, '../src/views'));
 app.use('/', routes); // Consume routes you have imported
 
 // Access assets (favicon, main.js, about.html …) from app (& EJS files) without relative path
-app.use(express.static('dist/client'));
+app.use(express.static('public/client'));
 
 // Start the Express server on port 3000
 app.listen(port, hostname, () => {

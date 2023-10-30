@@ -10,7 +10,7 @@ const frontend = {
   devtool: 'inline-source-map', //Simplfy tracking down errors
   output: {
     filename: 'main.js', // Output name of JS bundles
-    path: path.resolve(__dirname, 'dist/client'), //Output dir
+    path: path.resolve(__dirname, 'public/client'), //Output dir
   },
   optimization: {
     minimizer: [
@@ -45,7 +45,7 @@ const backend = {
   devtool: 'inline-source-map', //Simplfy tracking down errors
   output: {
     filename: 'server.js', // Output name of JS bundles
-    path: path.resolve(__dirname, 'dist'), // Output directory
+    path: path.resolve(__dirname, 'public'), // Output directory
   },
   target: 'node',
   plugins: [
